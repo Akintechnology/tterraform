@@ -20,7 +20,7 @@ jobs:
     needs: ["run-shell-command"]
     steps:
       -name: Directory
-       run: Get-Location
+       run: get-location
       -name: Directory bash
        run: pwd
        Shell: bash
