@@ -34,7 +34,7 @@ jobs:
 
       -name: Directory
 
-       run: Get-Location
+       run: pwd
 
       -name: Directory bash
 
