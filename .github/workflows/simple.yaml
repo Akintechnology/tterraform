@@ -15,6 +15,7 @@ jobs:
           node -v
           npm -v
 
+  run-Windows-commands:
     runs-on: windows-latest
     needs: ["run-shell-command"]
     steps:
