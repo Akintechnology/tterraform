@@ -3,24 +3,43 @@ name: shell commands
 on: [push]
 
 jobs:
+
   run-shell-command:
+
     runs-on: ubuntu-latest
+
     steps:
+
       - name: checkout
+
         uses: actions/checkout@v3
+
       - name: echo string
+
         run: echo "Hello World"
+
       - name: multi string
+
         run: |
+
           node -v
+
           npm -v
 
   run-Windows-commands:
+
     runs-on: windows-latest
+
     needs: ["run-shell-command"]
+
     steps:
+
       -name: Directory
-       run: get-location
+
+       run: Get-Location
+
       -name: Directory bash
+
        run: pwd
+
        Shell: bash
